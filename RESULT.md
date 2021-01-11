@@ -17,5 +17,11 @@ By solving the above iterative/numerical optimization by minimizing the sum of s
 
 <img width="1160" alt="allKmeans1" src="https://user-images.githubusercontent.com/43753085/104145783-f9b7d280-538d-11eb-91be-2fadb6635cd6.png">
 
+The following figures show the obtained clusters for class <img src="https://render.githubusercontent.com/render/math?math=C_{-1}">. As it is obvious all clusters are in the regions excluded sun and mountain.
+
+<img width="1150" alt="allKmeans2" src="https://user-images.githubusercontent.com/43753085/104145863-44d1e580-538e-11eb-87ea-20ebfb7d7038.png">
+
+Further, in the following figure all the 20 clusters including 10 clusters per class is demonstrated. As legends shows centroids are shown by black crosses and <img src="https://render.githubusercontent.com/render/math?math=C_{1}"> has indicator marker of circles (each cluster in this class has a different color) whereas <img src="https://render.githubusercontent.com/render/math?math=C_{-1}"> is shown by diamonds (each cluster in this class has a different color).
+
 
 # Classification via RBF network
