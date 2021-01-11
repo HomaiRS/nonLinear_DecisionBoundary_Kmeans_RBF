@@ -31,7 +31,7 @@ The number of clusters used in K-means algorithm shows the space that we are goi
 
 After I got the clusters via K-means, I designed the RBF network by using one input and one output and one hidden layer in which each layer’s activation function has been computed by <img src="https://render.githubusercontent.com/render/math?math=\phi(x)=e^{-\Beta_i||x-c_i||}"> such that <img src="https://render.githubusercontent.com/render/math?math=i"> = 1, 2, ... , 20. The RBFN is designed as follows. To compute the exponent of RBF function showed as <img src="https://render.githubusercontent.com/render/math?math=\Beta_i">, I used the formulas in the following picture that enhances the performance of PTA in the later steps. <img src="https://render.githubusercontent.com/render/math?math=\Beta_i"> and <img src="https://render.githubusercontent.com/render/math?math=c_i"> are the parameters which are specific to each cluster. Per input value, I compute the <img src="https://render.githubusercontent.com/render/math?math=\phi(x_i)"> is computed as it is shown in the following figure. (<img src="https://render.githubusercontent.com/render/math?math=\phi"> is a 20×1 vector). For more details on RBFN, see <https://mccormickml.com/2013/08/15/radial-basis-function-network-rbfn-tutorial/>.
 
-<img width="626" alt="myHandDrawing" src="https://user-images.githubusercontent.com/43753085/104146457-6b911b80-5390-11eb-96b0-108024eb8b54.png">
+<img width="1052" alt="myHandDrawing" src="https://user-images.githubusercontent.com/43753085/104146508-9ed3aa80-5390-11eb-8140-6a724017baf2.png">
 
 
 
