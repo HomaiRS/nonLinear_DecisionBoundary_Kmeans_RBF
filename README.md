@@ -1,9 +1,5 @@
 # Clustering and classification using K-means and RBF networks
 
-In this computer project, we will design an RBF network, and we use an existing library for solving the quadratic optimization problem that is associated with the SVM. Other than that, I do not use any existing machine learning/SVM library and I implemented the algorithm by my own. 
+The goal of this computer project is to design a RBF network with different number of centroids (e.g. 20, 4, and etc.) to solve a binary classification problem. I do not use any existing machine learning library, including libraries for the k-means algorithm, and I implemented the algorithm by my own. We have two classes of  <img src="https://render.githubusercontent.com/render/math?math=C_1={\{x_i : d_i = 1\}}"> and <img src="https://render.githubusercontent.com/render/math?math=C_{-1}={\{x_i : d_i = -1\}}"> that we want to predict the correct labels of these classe's data-points. The points in these classes are separated with a non-linear boundary. We first use the K-means algorithm to cluster the input data (e.g., n=200, 300, etc.) and then apply RBF using the K-means clusters' centroids for classification.
 
-We have two classes of <img src="https://render.githubusercontent.com/render/math?math=C_1={\{x_i : d_i = 1\}}"> and <img src="https://render.githubusercontent.com/render/math?math=C_{-1}={\{x_i : d_i = -1\}}"> in the input data that are separated with a non-linear boundary. 
-The region where  <img src="https://render.githubusercontent.com/render/math?math=d_i"> is 1 is the union of the region that remains below the mountains and the region that remains inside the sun in the figure below. 
-
-
-![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `See the results in "RESULT.md" file`
