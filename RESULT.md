@@ -38,7 +38,7 @@ I also used an equal value of Β for all clusters, and I got a perfect classific
 **PTA:** Now data in higher dimensions, by using 20 clusters we are in <img src="https://render.githubusercontent.com/render/math?math=R^20"> dimensions, patterns are hopefully linearly separable. Thus, we can use the iterative algorithm of Perceptron training algorithm (PTA) to compute the weights and bias to construct the decision boundaries that can classify the data into two classes. The PTA equation is as follows.
 
 For I=1 to n
-<img src="https://render.githubusercontent.com/render/math?math=W^{new}=W^{old} + \eta"> 
+<img src="https://render.githubusercontent.com/render/math?math=W^{new}=W^{old}"> + <img src="https://render.githubusercontent.com/render/math?math=+"> 
 
 
 
