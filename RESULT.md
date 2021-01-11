@@ -46,11 +46,7 @@ Where the activation function of <img src="https://render.githubusercontent.com/
 
 **Having less clusters (say 4):** In this specific problem that decision boundaries are highly nonlinear, we might not be able to linearly separate the input patterns in 4 dimensions. Thus, based on this, PTA that is a method for optimizing weight and bias for linearly separable input patterns does not yield a good approximation for the highly nonlinear boundaries in 4 dimensions. So, as it is demonstrated in the following plot and according to aforementioned explanation, we are not able to separate the two classes perfectly and we end up having some misclassifications errors (shown in green squares).
 
-![BadPerformanc_4Clusters3](https://user-images.githubusercontent.com/43753085/104147020-574e1e00-5392-11eb-99db-d45bb4dcbb8f.png)
+<img width="968" alt="PTA2" src="https://user-images.githubusercontent.com/43753085/104147067-83699f00-5392-11eb-8fc6-885750b2890d.png">
 
-
-
-
-
-
+The blue line is the projection/ contour of <img src="https://render.githubusercontent.com/render/math?math=g(x)=0">. (the yellow lines are level set equal to 0.5). We have 4 misclassified data points in <img src="https://render.githubusercontent.com/render/math?math=C_1"> and one misclassified point in <img src="https://render.githubusercontent.com/render/math?math=C_{-1}">. This shows we need at least more that 4-dimensional embedding of the data to get a good approximation of decision boundary.
 
