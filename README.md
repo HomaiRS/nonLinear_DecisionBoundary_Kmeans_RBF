@@ -4,7 +4,7 @@ The goal of this computer project is to design a RBF network with different numb
 
 
 ```diff
-- See the results in "RESULT.md" file in red
+@@  See the results in "RESULT.md" file in red @@ 
 + text in green
 ! text in orange
 # text in gray
