@@ -6,4 +6,6 @@ We have two classes of <img src="https://render.githubusercontent.com/render/mat
 The region where  <img src="https://render.githubusercontent.com/render/math?math=d_i"> is 1 is the union of the region that remains below the mountains and the region that remains inside the sun in the figure below. 
 
 
-![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
+<div class="text-red mb-2">
+  .text-red on white
+</div>
