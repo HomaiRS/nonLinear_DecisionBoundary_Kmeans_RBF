@@ -50,3 +50,5 @@ Where the activation function of <img src="https://render.githubusercontent.com/
 
 The blue line is the projection/ contour of <img src="https://render.githubusercontent.com/render/math?math=g(x)=0">. (the yellow lines are level set equal to 0.5). We have 4 misclassified data points in <img src="https://render.githubusercontent.com/render/math?math=C_1"> and one misclassified point in <img src="https://render.githubusercontent.com/render/math?math=C_{-1}">. This shows we need at least more that 4-dimensional embedding of the data to get a good approximation of decision boundary.
 
+<img width="732" alt="dataStructure2" src="https://user-images.githubusercontent.com/43753085/104147192-f4a95200-5392-11eb-8605-9c1810061460.png">
+
