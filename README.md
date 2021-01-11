@@ -4,4 +4,10 @@ The goal of this computer project is to design a RBF network with different numb
 
 ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `** See the results in "RESULT.md" file **`
 
-https://placehold.it/150/ffffff/ff0000?text=hello
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
