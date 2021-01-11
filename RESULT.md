@@ -23,5 +23,9 @@ The following figures show the obtained clusters for class <img src="https://ren
 
 Further, in the following figure all the 20 clusters including 10 clusters per class is demonstrated. As legends shows centroids are shown by black crosses and <img src="https://render.githubusercontent.com/render/math?math=C_{1}"> has indicator marker of circles (each cluster in this class has a different color) whereas <img src="https://render.githubusercontent.com/render/math?math=C_{-1}"> is shown by diamonds (each cluster in this class has a different color).
 
+[Kmeans_BothClasses.pdf](https://github.com/HomaiRS/Face_Classification_SupervisedML/files/5793949/Kmeans_BothClasses.pdf)
+
+
+
 
 # Classification via RBF network
