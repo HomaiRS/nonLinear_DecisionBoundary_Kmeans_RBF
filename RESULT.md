@@ -8,10 +8,8 @@ As indicated in above figure, the decision boundary that can classify data point
 
 **K-means:** In the first step, I clustered each class of <img src="https://render.githubusercontent.com/render/math?math=C_1"> and <img src="https://render.githubusercontent.com/render/math?math=C_{-1}"> into ten clusters (20 cluster in total) using the K-means algorithm. I implemented the K-means algorithm, code is attached in the appendix, through the following three steps.
 
-**1. Randominitialization:** Iinitializedthecentroidsofallclustersbypicking20 datapoints randomly.
-
-**2. Clusteringclosepoints:** Then,allthedatapointsthataretheclosest (similar) to a centroid will create a cluster.
-
+**1. Randominitialization:** Iinitializedthecentroidsofallclustersbypicking20 datapoints randomly.       
+**2. Clusteringclosepoints:** Then,allthedatapointsthataretheclosest (similar) to a centroid will create a cluster.     
 **3. Movethecentroids:** Inthisstep,Icomputedthemeanofeachcluster,and updated the centroids by this mean value of points per cluster.
 
 
