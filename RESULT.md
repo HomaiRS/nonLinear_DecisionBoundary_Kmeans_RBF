@@ -25,7 +25,8 @@ Further, in the following figure all the 20 clusters including 10 clusters per c
 
 ![Kmeans_BothClasses](https://user-images.githubusercontent.com/43753085/104146029-dccfcf00-538e-11eb-9008-402430814510.png)
 
+The number of clusters used in K-means algorithm shows the space that we are going to lift our data to make the input patterns linearly separable there. The number of clusters indicates the length of weight vector that can be learned through Perceptron training algorithm (PTA) in the next steps.
 
+# RBF network
 
-
-# Classification via RBF network
+After I got the clusters via K-means, I designed the RBF network by using one input and one output and one hidden layer in which each layer’s activation function has been computed by <img src="https://render.githubusercontent.com/render/math?math=\phi(x)=e^{-\Beta_i||x-c_i||}"> such that <img src="https://render.githubusercontent.com/render/math?math=i"> = 1, 2, ... , 20. The RBFN is designed as follows. To compute the exponent of RBF function showed as <img src="https://render.githubusercontent.com/render/math?math=\Beta_i">, I used the formulas in the following picture that enhances the performance of PTA in the later steps. <img src="https://render.githubusercontent.com/render/math?math=\Beta_i"> and <img src="https://render.githubusercontent.com/render/math?math=c_i"> are the parameters which are specific to each cluster. Per input value, I compute the <img src="https://render.githubusercontent.com/render/math?math=\phi(x_i)"> is computed as it is shown in the following figure. (<img src="https://render.githubusercontent.com/render/math?math=\phi"> is a 20×1 vector).
