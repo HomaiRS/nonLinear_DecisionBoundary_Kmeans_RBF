@@ -40,7 +40,17 @@ I also used an equal value of Β for all clusters, and I got a perfect classific
 For I=1 to n
 <img src="https://render.githubusercontent.com/render/math?math=W^{new}=\eta\phi(x)(d_i -u(W^T\phi(x)))"> + 𝑤_old
 
-Where the activation function of <img src="https://render.githubusercontent.com/render/math?math=u"> is the signum function. I used online learning to update the weight. The stopping criteria to obtain the optimal solution (optimal weight and bias) is the misclassification error and a threshold on the number of iterations. Then, after obtaining the optimal solution and optimal bias, there are two ways to compute the decision boundary ({𝑥: 𝑔(𝑥) = <img src="https://render.githubusercontent.com/render/math?math=W^T\phi(x)"> + 𝜃 = <img src="https://render.githubusercontent.com/render/math?math=0">}). One is numerically evaluate 1,000/10,000/100,000 points in the 2D plane both in 𝑥 and 𝑦 directions, and then approximate the decision boundaries by accepting the value of <img src="https://render.githubusercontent.com/render/math?math=g(x,y)"> where the <img src="https://render.githubusercontent.com/render/math?math=g=0">.
+Where the activation function of <img src="https://render.githubusercontent.com/render/math?math=u"> is the signum function. I used online learning to update the weight. The stopping criteria to obtain the optimal solution (optimal weight and bias) is the misclassification error and a threshold on the number of iterations. Then, after obtaining the optimal solution and optimal bias, there are two ways to compute the decision boundary ({𝑥: 𝑔(𝑥) = <img src="https://render.githubusercontent.com/render/math?math=W^T\phi(x)"> + 𝜃 = <img src="https://render.githubusercontent.com/render/math?math=0">}). One is numerically evaluate 1,000/10,000/100,000 points in the 2D plane both in 𝑥 and 𝑦 directions, and then approximate the decision boundaries by accepting the value of <img src="https://render.githubusercontent.com/render/math?math=g(x,y)"> where the <img src="https://render.githubusercontent.com/render/math?math=g=0">. This method is usually time-consuming and not the most efficient way to approximate the decision boundaries. Instead, I computed the <img src="https://render.githubusercontent.com/render/math?math=g(x)=0"> by projecting the contour of this discriminating function in to the 2D plane (as recommended on Piazza). The results of decision boundaries using 20 clusters, are indicated in the following plots that perfectly separates the two classes in four different cases.
+
+<img width="1070" alt="PTA1" src="https://user-images.githubusercontent.com/43753085/104146985-371e5f00-5392-11eb-92f8-2fa503438de2.png">
+
+**Having less clusters (say 4):** In this specific problem that decision boundaries are highly nonlinear, we might not be able to linearly separate the input patterns in 4 dimensions. Thus, based on this, PTA that is a method for optimizing weight and bias for linearly separable input patterns does not yield a good approximation for the highly nonlinear boundaries in 4 dimensions. So, as it is demonstrated in the following plot and according to aforementioned explanation, we are not able to separate the two classes perfectly and we end up having some misclassifications errors (shown in green squares).
+
+![BadPerformanc_4Clusters3](https://user-images.githubusercontent.com/43753085/104147020-574e1e00-5392-11eb-99db-d45bb4dcbb8f.png)
+
+
+
+
 
 
 
