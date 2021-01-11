@@ -6,13 +6,16 @@ In this computer project, the goal is to design an RBF network with different nu
 
 As indicated in above figure, the decision boundary that can classify data points in the 2D plane is highly nonlinear. One way to linearize the input patters is to lift them in higher dimensions in another space and try to classify data in that higher dimension and project (using contour) the obtained boundary in higher dimensions into 2D plane to calculate the boundaries in <img src="https://render.githubusercontent.com/render/math?math=R^2">.
 
-## K-means: 
+### K-means: 
 In the first step, I clustered each class of <img src="https://render.githubusercontent.com/render/math?math=C_1"> and <img src="https://render.githubusercontent.com/render/math?math=C_{-1}"> into ten clusters (20 cluster in total) using the K-means algorithm. I implemented the K-means algorithm, code is attached in the appendix, through the following three steps.
 
 **1. Randominitialization:** Iinitializedthecentroidsofallclustersbypicking20 datapoints randomly.       
 **2. Clusteringclosepoints:** Then,allthedatapointsthataretheclosest (similar) to a centroid will create a cluster.     
 **3. Movethecentroids:** Inthisstep,Icomputedthemeanofeachcluster,and updated the centroids by this mean value of points per cluster.
 
+By solving the above iterative/numerical optimization by minimizing the sum of squares of distance of each point to the clusters’ centroids, we converge to the solution while the centroids as well as data points per cluster do not change anymore (convergence criteria). The result of K-means clustering is shown below per Class <img src="https://render.githubusercontent.com/render/math?math=C_1"> and <img src="https://render.githubusercontent.com/render/math?math=C_{-1}">  as well as all 20 clusters including all data points.
+
+<img width="1160" alt="allKmeans1" src="https://user-images.githubusercontent.com/43753085/104145783-f9b7d280-538d-11eb-91be-2fadb6635cd6.png">
 
 
 # Classification via RBF network
