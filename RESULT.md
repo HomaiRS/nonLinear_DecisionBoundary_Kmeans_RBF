@@ -40,7 +40,7 @@ I also used an equal value of Β for all clusters, and I got a perfect classific
 For I=1 to n
 <img src="https://render.githubusercontent.com/render/math?math=W^{new}=\eta\phi(x)(d_i -u(W^T\phi(x)))"> + 𝑤_old
 
-Where the activation function of <img src="https://render.githubusercontent.com/render/math?math=u"> is the signum function. I used online learning to update the weight. The stopping criteria to obtain the optimal solution (optimal weight and bias) is the misclassification error and a threshold on the number of iterations. Then, after obtaining the optimal solution and optimal bias, there are two ways to compute the decision boundary ({𝑥: 𝑔(𝑥) = <img src="https://render.githubusercontent.com/render/math?math=W^T\phi(x)"> + 𝜃 = <img src="https://render.githubusercontent.com/render/math?math=0"> }). 
+Where the activation function of <img src="https://render.githubusercontent.com/render/math?math=u"> is the signum function. I used online learning to update the weight. The stopping criteria to obtain the optimal solution (optimal weight and bias) is the misclassification error and a threshold on the number of iterations. Then, after obtaining the optimal solution and optimal bias, there are two ways to compute the decision boundary ({𝑥: 𝑔(𝑥) = <img src="https://render.githubusercontent.com/render/math?math=W^T\phi(x)"> + 𝜃 = <img src="https://render.githubusercontent.com/render/math?math=0">}). One is numerically evaluate 1,000/10,000/100,000 points in the 2D plane both in 𝑥 and 𝑦 directions, and then approximate the decision boundaries by accepting the value of <img src="https://render.githubusercontent.com/render/math?math=g(x,y)"> where the <img src="https://render.githubusercontent.com/render/math?math=g=0">.
 
 
 
